@@ -1,0 +1,19 @@
+{
+  "name": "sparkedhost-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^1.0.0",
+    "express": "^4.19.2",
+    "ws": "^8.18.0",
+    "zod": "^4.0.0"
+  }
+}
