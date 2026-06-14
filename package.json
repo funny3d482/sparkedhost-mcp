@@ -11,6 +11,7 @@
     "dev": "node index.js"
   },
   "dependencies": {
+    "@cfworker/json-schema": "^4.1.1",
     "@modelcontextprotocol/server": "^2.0.0-alpha.2",
     "express": "^4.19.2",
     "ws": "^8.18.0",
