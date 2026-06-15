@@ -1,7 +1,7 @@
 import express from 'express';
 import * as z from 'zod/v4';
 import { McpServer } from '@modelcontextprotocol/server';
-import { StreamableHTTPServerTransport } from '@modelcontextprotocol/server/streamableHttp';
+import { NodeStreamableHTTPServerTransport } from '@modelcontextprotocol/node';
 import {
   loadConfig,
   listFiles,
@@ -231,7 +231,7 @@ app.get('/health', (_req, res) => {
 app.post('/mcp', requireSharedSecret, async (req, res) => {
   try {
     const server = createServer();
-    const transport = new StreamableHTTPServerTransport({
+    const transport = new NodeStreamableHTTPServerTransport({
       sessionIdGenerator: undefined
     });
 
